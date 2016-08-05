@@ -4,9 +4,13 @@ Simple application for tracking daily meals built using flask as backend(REST AP
 
 ##Installation
 
-Run pip install -r requirements.txt to get python depenedencies
+Run 
+    pip install -r requirements.txt 
+to get python depenedencies
 
-Run npm install to get frontend dependencies
+Run 
+    npm install 
+to get frontend dependencies
 
 
 ##Starting server

@@ -1,6 +1,7 @@
 # MyMeals
 
 Simple application for tracking daily meals built using flask as backend(REST API) and React on frontend.
+You can see it at http://46.101.25.187
 
 ##Installation
 

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="page-header">
+            <h1>MyMeals</h1>
+        </div>
+        <div id="meals"></div>
+    </div>
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ url_for('static', filename='scripts/js/meals.js') }}"></script>
+
+
+{% endblock %}

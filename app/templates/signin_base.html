@@ -1,0 +1,28 @@
+<html>
+{% block title %}
+{% endblock %}
+
+<head>
+	<link type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+
+<div class="row" style="margin-top: 30px">
+    <div class="col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+        <img src="/static/img/logo.png" class="img-responsive" style="margin-right: 10px" alt="Logo">
+    </div>
+	<div class="col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+		<div class="well">
+			<form class="form-horizontal" method="post">
+                {% block form_content %}
+                {% endblock %}
+			</form>
+            {% block messages %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+</html>

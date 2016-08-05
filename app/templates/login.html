@@ -1,0 +1,44 @@
+{% extends 'signin_base.html' %}
+
+{% block title %}
+    <title>Login-CaloriesCounter</title>
+{% endblock %}
+
+{% block form_content %}
+    <legend>Login</legend>
+    <fieldset>
+        <div class="form-group">
+            <div class="col-md-12 col-lg-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="inputUsername" placeholder="Username">
+                    <span class="input-group-addon glyphicon glyphicon-user"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12 col-lg-12">
+                <div class="input-group">
+                    <input type="password" class="form-control" name="inputPassword" placeholder="Password">
+                    <i class="glyphicon glyphicon-lock input-group-addon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-offset-5 col-md-offset-5">
+                <button type="submit" class="btn btn-info">Login</button>
+            </div>
+        </div>
+    </fieldset>
+{% endblock %}
+{% block messages %}
+    <p>Do you have a profile? No? <a href='/register'>Register</a></p>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{category}}" style="text-align: center">
+                    {{ message }}
+                </div>
+            {% endfor %}
+       {% endif %}
+    {% endwith %}
+{% endblock %}

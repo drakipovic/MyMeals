@@ -1,0 +1,43 @@
+th{
+    background-color: #1b96fe;
+    padding-left: 5px;
+    color: white; 
+}
+#loading{
+    position: absolute; width: 100%; height: 100%; background: url('/static/spinner.gif') no-repeat center center;
+}
+
+.panel-primary > .panel-heading-color{
+    background-color: #1b96fe !important;
+}
+
+.btn-primary{
+    background-color: #1b96fe !important;
+}
+
+.btn-info{
+    background-color: #1b96fe !important;
+    border-color: #1b96fe !important;
+}
+
+body{
+    font-size: 20px;
+}
+.success{
+    background-color: #66FF66;
+}
+
+.error{
+    background-color: #FF6666;
+}
+.small-text{
+    font-size: 12px;
+}
+
+.add-margin{
+    margin-top: 10px;
+}
+
+.list-group-item{
+    border-color: #1b96fe;
+}

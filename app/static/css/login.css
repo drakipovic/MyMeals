@@ -1,0 +1,12 @@
+body{
+    background: #EEEEEE;
+}
+
+.well{
+    background-color: white;
+}
+
+.btn-info{
+    background-color: #1b96fe !important;
+    border-color: #1b96fe;
+}

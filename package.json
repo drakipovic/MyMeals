@@ -1,0 +1,35 @@
+{
+  "name": "dino-rakipovic",
+  "version": "1.0.0",
+  "description": "simple tracker of your daily meals",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-meals": "browserify -t [ babelify --presets [ react ] ] my_meals/static/scripts/jsx/meals.js -o my_meals/static/scripts/js/meals.js",
+    "build-users": "browserify -t [ babelify --presets [ react ] ] my_meals/static/scripts/jsx/users.js -o my_meals/static/scripts/js/users.js",
+    "build-profile": "browserify -t [ babelify --presets [ react ] ] my_meals/static/scripts/jsx/profile.js -o my_meals/static/scripts/js/profile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.toptal.com:Dino-Rakipovic/dino-rakipovic.git"
+  },
+  "keywords": [
+    "flask",
+    "react"
+  ],
+  "author": "drakipovic",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "classnames": "^2.2.5",
+    "react-bootstrap-datetimepicker": "0.0.22",
+    "react-bootstrap-table": "^2.3.9",
+    "react-widgets": "^3.4.3",
+    "riek": "^1.0.2"
+  }
+}

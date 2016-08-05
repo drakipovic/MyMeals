@@ -5,11 +5,13 @@ You can see it at http://46.101.25.187
 
 ##Installation
 
-Run 
+Run
+
     pip install -r requirements.txt 
 to get python depenedencies
 
-Run 
+Run
+
     npm install 
 to get frontend dependencies
 

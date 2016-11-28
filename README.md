@@ -1,18 +1,26 @@
 # MyMeals
-###Simple application for tracking daily meals built using flask as backend(REST API) and React on frontend.
+
+Simple application for tracking daily meals built using flask as backend(REST API) and React on frontend.
+
 
 ##Installation
 
-###Run pip install -r requirements.txt to get python depenedencies
+Run
 
-###Run npm install to get frontend dependencies
+    pip install -r requirements.txt 
+to get python depenedencies
+
+Run
+
+    npm install 
+to get frontend dependencies
 
 
 ##Starting server
 
     python run.py
 
-###and head to localhost:5000
+and head to localhost:5000
 
 
 ###API endpoints
